@@ -4,7 +4,7 @@ import numpy as np
 from tensorflow.keras.utils import img_to_array
 from tensorflow.keras.models import load_model
 
-model = load_model("tomato_leaf_diseases_detection.h5")
+model = load_model("tomato_disease_detector-99acc.keras")
 
 classes = ['Bacterial spot', 'Early blight', 'Late blight', 'Leaf Mold',
            'Septoria leaf spot', 'Spider mites', 'Target Spot',
