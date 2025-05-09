@@ -1,5 +1,5 @@
 python==3.11.0
 streamlit==1.45.0
-tensorflow==2.11.0
+tensorflow
 numpy
 Pillow
