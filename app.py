@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
-from tensorflow.keras.utils import img_to_array
+import tensorflow as tf
 from tensorflow.keras.models import load_model
 
 model = load_model("tomato_leaf_diseases_detection.h5")
@@ -41,7 +41,7 @@ if image is not None:
     image = Image.open(image).convert("RGB")
     st.image(image, caption='The photo you uploaded', width=250)
     img = image.resize((224, 224))
-    img_array = img_to_array(img)
+    img_array = np.asarray(img, dtype=np.float32)
     img_array = np.expand_dims(img_array, axis=0) / 255.0
 
 button = st.button("Detect The Disease!")
