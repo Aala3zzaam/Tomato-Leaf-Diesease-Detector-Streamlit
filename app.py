@@ -49,4 +49,4 @@ if image is not None:
             predicted_class = classes[np.argmax(prediction)]
             st.success(f"The Expected Disease is: {predicted_class}")
     except Exception as e:
-        st.error("An error occurred. Please check the image or try again later.")
+        st.error("An error occurred. Please check the image, model file, or try again later.")
