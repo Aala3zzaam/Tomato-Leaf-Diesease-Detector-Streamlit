@@ -11,7 +11,7 @@ classes = ['Bacterial spot', 'Early blight', 'Late blight', 'Leaf Mold',
            'Yellow Leaf Curl Virus', 'Mosaic virus', 'Healthy']
 
 st.header("🍅 Tomato Leaf Disease Detector!")
-st.subheader("Model Accuracy: 97.76%")
+st.subheader("Model Accuracy: 96.3%")
 
 
 image = st.file_uploader("Upload your picture here!")
